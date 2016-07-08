@@ -3,7 +3,6 @@ package gatt
 import (
 	"bytes"
 	"encoding/binary"
-	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -300,13 +299,16 @@ func (p *peripheral) WriteDescriptor(d *Descriptor, value []byte) error {
 
 func (p *peripheral) setNotifyValue(c *Characteristic, flag uint16,
 	f func(*Characteristic, []byte, error)) error {
+/*
 	if c.cccd == nil {
 		return errors.New("no cccd") // FIXME
 	}
 	ccc := uint16(0)
 	if f != nil {
 		ccc = flag
+*/
 		p.sub.subscribe(c.vh, func(b []byte, err error) { f(c, b, err) })
+/*
 	}
 	b := make([]byte, 5)
 	op := byte(attOpWriteReq)
@@ -320,6 +322,7 @@ func (p *peripheral) setNotifyValue(c *Characteristic, flag uint16,
 	if f == nil {
 		p.sub.unsubscribe(c.vh)
 	}
+*/
 	return nil
 }
 
