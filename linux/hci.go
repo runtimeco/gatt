@@ -135,10 +135,10 @@ func (h *HCI) Connect(pd *PlatData) error {
 			PeerAddressType:       pd.AddressType, // public or random
 			PeerAddress:           pd.Address,     //
 			OwnAddressType:        0x00,           // public
-			ConnIntervalMin:       0x0006,         // N x 0.125ms
-			ConnIntervalMax:       0x0006,         // N x 0.125ms
+			ConnIntervalMin:       6,         // N x 0.125ms
+			ConnIntervalMax:       7,         // N x 0.125ms
 			ConnLatency:           0x0000,         //
-			SupervisionTimeout:    0x000A,         // N x 10ms
+			SupervisionTimeout:    0x00100,         // N x 10ms
 			MinimumCELength:       0x0000,         // N x 0.625ms
 			MaximumCELength:       0x0000,         // N x 0.625ms
 		})
