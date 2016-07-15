@@ -74,6 +74,8 @@ type Advertisement struct {
 	TxPowerLevel     int
 	Connectable      bool
 	SolicitedService []UUID
+	AddressType uint8
+	Address     [6]byte
 }
 
 // This is only used in Linux port.

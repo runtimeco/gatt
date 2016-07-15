@@ -96,6 +96,8 @@ func (d *device) Init(f func(Device, State)) error {
 		a := &Advertisement{}
 		a.unmarshall(pd.Data)
 		a.Connectable = pd.Connectable
+	        a.Address = pd.Address
+		a.AddressType = pd.AddressType
 		p := &peripheral{pd: pd, d: d}
 		if d.peripheralDiscovered != nil {
 			pd.Name = a.LocalName
