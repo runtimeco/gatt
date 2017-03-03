@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/runtimeinc/gatt"
-	"github.com/runtimeinc/gatt/examples/option"
+	"github.com/runtimeco/gatt"
+	"github.com/runtimeco/gatt/examples/option"
 )
 
 func onStateChanged(d gatt.Device, s gatt.State) {

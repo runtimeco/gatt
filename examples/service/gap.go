@@ -1,6 +1,6 @@
 package service
 
-import "github.com/runtimeinc/gatt"
+import "github.com/runtimeco/gatt"
 
 var (
 	attrGAPUUID = gatt.UUID16(0x1800)

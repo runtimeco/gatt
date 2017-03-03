@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/runtimeinc/gatt"
-	"github.com/runtimeinc/gatt/examples/option"
+	"github.com/runtimeco/gatt"
+	"github.com/runtimeco/gatt/examples/option"
 )
 
 var done = make(chan struct{})

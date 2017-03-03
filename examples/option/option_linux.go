@@ -1,8 +1,8 @@
 package option
 
 import (
-	"github.com/runtimeinc/gatt"
-	"github.com/runtimeinc/gatt/linux/cmd"
+	"github.com/runtimeco/gatt"
+	"github.com/runtimeco/gatt/linux/cmd"
 )
 
 var DefaultClientOptions = []gatt.Option{

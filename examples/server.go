@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/runtimeinc/gatt"
-	"github.com/runtimeinc/gatt/examples/option"
-	"github.com/runtimeinc/gatt/examples/service"
+	"github.com/runtimeco/gatt"
+	"github.com/runtimeco/gatt/examples/option"
+	"github.com/runtimeco/gatt/examples/service"
 )
 
 func main() {

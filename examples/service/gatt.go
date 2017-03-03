@@ -3,7 +3,7 @@ package service
 import (
 	"log"
 
-	"github.com/runtimeinc/gatt"
+	"github.com/runtimeco/gatt"
 )
 
 var (

@@ -1,6 +1,6 @@
 package option
 
-import "github.com/runtimeinc/gatt"
+import "github.com/runtimeco/gatt"
 
 var DefaultClientOptions = []gatt.Option{
 	gatt.MacDeviceRole(gatt.CentralManager),
